@@ -26,7 +26,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - printf '[{"name":"myhttpd","imageUri":"%s"}]' 183631316272.dkr.ecr.ap-northeast-1.amazonaws.com/ecr1028:$TAG > imagedefinitions.json
+      - printf '[{"name":"mynginx","imageUri":"%s"}]' 183631316272.dkr.ecr.ap-northeast-1.amazonaws.com/ecr1028:$TAG > imagedefinitions.json
       - cat imagedefinitions.json
 artifacts:
   files:
